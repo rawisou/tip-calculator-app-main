@@ -24,34 +24,42 @@
     <section class="calculator-section">
       <div class="calculator-wrapper">
         <div class="bill-section">
-          <p class="font-title"> Bill</p>
           <form action="">
-            <label for="billInput">
-              <img class="dollar-sign" src="images/icon-dollar.svg" alt="dollar sign">
-              <div class="input-wrapper">
-              <input type="text" name="billInput" id="billInput">
+            <label for="billInput"> Bill </label>
+            <img class="dollar-sign" src="images/icon-dollar.svg" alt="dollar sign">
+            <div class="input-wrapper">
+              <input type="text" name="userInput" id="billInput">
             </div>
-            </label>
           </form>
-          <p class="font-title"> Select Tip %</p>
-          <div class="select-tip-section">
-            <button id="fivePercent">5%</button>
-            <button id="tenPercent">10%</button>
-            <button id="fifteenPercent">15%</button>
-            <button id="twentyFivePercent">25%</button>
-            <button id="fiftyPercent">50%</button>
-            <button class="custom-amount" id="customAmount">Custom</button>
-          </div>
+          <fieldset class="select-tip-section">
+            <legend> Select Tip %</legend>
+            <label for="tips-option"> 5%
+              <input type="radio" value="5" name="tips-option" />
+            </label>
+            <label for="tips-option">10%
+              <input type="radio" value="10" name="tips-option" />
+            </label>
+            <label for="tips-option">15%
+              <input type="radio" value="15" name="tips-option" />
+            </label>
+            <label for="tips-option">25%
+              <input type="radio" value="25" name="tips-option" />
+            </label>
+            <label for="tips-option">50%
+              <input type="radio" value="50" name="tips-option" />
+            </label>
+            <label for="tips-option">
+              <input type="text" class="custom-amount" id="customAmount" name="tips-option" placeholder="Custom"/>
+            </label>
+          </fieldset>
 
           <div class="num-people-section" id="people">
-            <p class="font-title"> Number of people</p>
             <form action="">
-              <label for="numOfPeople">
-                <img class="person-icon" src="images/icon-person.svg" alt="person">
-                <div class="input-wrapper">
-                <input type="text" name="numOfPeople" id="numOfPeople" class="num-ppl-input">
+              <label for="numOfPeople"> Number of people </label>
+              <img class="person-icon" src="images/icon-person.svg" alt="person">
+              <div class="input-wrapper">
+                <input type="text" name="userInput" id="numOfPeople" class="num-ppl-input">
               </div>
-              </label>
             </form>
           </div>
         </div>
@@ -60,7 +68,7 @@
           <p>/person</p>
           <p class="font-in-white"> Total <span id="tipTotal">$</span></p>
           <p>/person</p>
-          <button class="reset"> RESET </button>
+          <button class="reset" id="resetBtn"> RESET </button>
         </div>
       </div>
     </section>
@@ -71,6 +79,8 @@
     </footer>
 
   </main>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
