@@ -18,18 +18,22 @@
 
 <body>
   <main>
-    <header><h1> spli <br/> tter </h1></header>
+    <header>
+      <h1> spli <br /> tter </h1>
+    </header>
     <section class="calculator-section">
       <div class="calculator-wrapper">
-        <p> Bill</p>
+        <p class="font-title"> Bill</p>
         <div class="bill-section">
           <form action="">
             <label for="billInput">
-              <img class="dollar-sign" src="images/icon-dollar.svg" alt="dollar sign"><input type="text"
-                name="billInput" class="num-of-bill" id="billInput">
+              <img class="dollar-sign" src="images/icon-dollar.svg" alt="dollar sign">
+              <div class="input-wrapper">
+              <input type="text" name="billInput" id="billInput">
+            </div>
             </label>
           </form>
-          <p> Select Tip %</p>
+          <p class="font-title"> Select Tip %</p>
           <div class="select-tip-section">
             <button id="fivePercent">5%</button>
             <button id="tenPercent">10%</button>
@@ -40,23 +44,25 @@
           </div>
 
           <div class="num-people-section" id="people">
-            <p>Number of people</p>
+            <p class="font-title"> Number of people</p>
             <form action="">
               <label for="numOfPeople">
-              <img class="peron-icon"src="images/icon-person.svg" alt="person"><input type="text" name="numOfPeople" class="num-of-people"
-                id="numOfPeople">
+                <img class="person-icon" src="images/icon-person.svg" alt="person">
+                <div class="input-wrapper">
+                <input type="text" name="numOfPeople" id="numOfPeople" class="num-ppl-input">
+              </div>
               </label>
             </form>
           </div>
         </div>
-          <div class="total">
-            <p class="font-in-white">Tip Amount<span class="val" id="val"> 20$</span></p>
-            <p>/person</p>
-            <p class="font-in-white"> Total </p>
-            <p>/person</p>
-            <button class="reset"> RESET </button>
-          </div>
+        <div class="total">
+          <p class="font-in-white">Tip Amount<span id="tipAmount">$</span></p>
+          <p>/person</p>
+          <p class="font-in-white"> Total <span id="tipTotal">$</span></p>
+          <p>/person</p>
+          <button class="reset"> RESET </button>
         </div>
+      </div>
     </section>
 
     <footer class="attribution">
