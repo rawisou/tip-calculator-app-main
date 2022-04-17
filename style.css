@@ -64,7 +64,7 @@ input {
 }
 
 button {
-    background-color: hsl(183, 100%, 15%);
+    background-color: var(--color-darkest-cyan);
     border-radius: 5px;
     border: none;
     color: white;
@@ -94,7 +94,7 @@ button {
 .calculator-wrapper {
     background-color: white;
     border-radius: 20px;
-    width: 320px;
+    width: 300px;
     padding: 20px;
 }
 
@@ -117,7 +117,7 @@ button {
 }
 .total {
     background-color: var(--color-darkest-cyan);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 30px 20px 10px 20px;
     margin-top: 30px;
     position: relative;
@@ -155,4 +155,59 @@ footer {
 .attribution a { 
     color: var(--color-darkest-cyan); 
     text-decoration: none;
+}
+
+@media (min-width: 360px) {
+    .calculator-wrapper {
+        width: 320px;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .calculator-wrapper {
+        display: flex;
+        width:  620px;
+        padding: 20px;
+        gap: 10px;
+    }
+    .bill-section{
+        width: 300px;
+    }
+    .total {
+        width: 250px;
+        margin-top: 0;
+        margin-left: 20px;
+        font-display: flex;
+        align-items: space-around;
+    }
+    
+    .font-title {
+        margin-top: 10px;
+    }
+    button {
+        width: 85px;
+        padding: 5px 0 5px 0;
+        margin: 5px;
+    }
+    .select-tip-section {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+    }
+
+
+    .total p:nth-child(odd) {
+        font-size: .9em;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .total p:nth-child(even) {
+        font-size: .8em;
+        font-weight: 600;
+    }
+
+    .reset {
+        margin-top: 60px;
+    }
 }
