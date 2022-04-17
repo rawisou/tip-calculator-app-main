@@ -30,7 +30,6 @@
             <div class="input-wrapper">
               <input type="text" name="userInput" id="billInput">
             </div>
-          </form>
           <fieldset class="select-tip-section">
             <legend> Select Tip %</legend>
             <label for="tips-option"> 5%
@@ -49,20 +48,19 @@
               <input type="radio" value="50" name="tips-option" />
             </label>
             <label for="tips-option">
-              <input type="text" class="custom-amount" id="customAmount" name="tips-option" placeholder="Custom"/>
+              <input type="number" class="custom-amount" id="customAmount" name="custom-amount" placeholder="Custom"/>
             </label>
           </fieldset>
 
           <div class="num-people-section" id="people">
-            <form action="">
               <label for="numOfPeople"> Number of people </label>
               <img class="person-icon" src="images/icon-person.svg" alt="person">
               <div class="input-wrapper">
                 <input type="text" name="userInput" id="numOfPeople" class="num-ppl-input">
               </div>
-            </form>
           </div>
         </div>
+      </form>
         <div class="total">
           <p class="font-in-white">Tip Amount<span id="tipAmount">$</span></p>
           <p>/person</p>
