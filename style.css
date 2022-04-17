@@ -1,0 +1,102 @@
+:root {
+    --color-darkest-cyan: hsl(183, 100%, 15%);
+    --color-darker-cyan: hsl(186, 14%, 43%);
+    --color-dark-cyan: hsl(184, 14%, 56%);
+    --color-light-cyan: hsl(185, 41%, 84%);
+    --color-lighter-cyan: hsl(189, 41%, 97%);
+  }
+
+*:focus {
+    outline: none;
+}
+* {
+    border: 0;
+    margin: 0;
+    font-family: Space Mono;
+}
+
+body {
+    background-color: var(--color-light-cyan);
+}
+
+header {
+    text-align: center;
+    margin: 40px;
+}
+
+h1 {
+    color: var(--color-darkest-cyan);
+    font-size: 1.2em;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+p {
+   color: hsl(186, 14%, 43%);
+}
+
+.font-in-white {
+    color: white;
+}
+
+.dollar-sign, .person-icon {
+    width: 15px;
+    position: absolute;
+    left: 30px;
+    margin-top: 10px;
+}
+
+.calculator-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calculator-wrapper {
+    background-color: white;
+    border-radius: 20px;
+    width: 320px;
+}
+
+.bill-section, .num-people-section {
+    position: relative;
+}
+
+.select-tip-section {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    justify-content: center;
+}
+.tip {
+    justify-content: left;
+}
+
+button {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    width: 120px;
+    padding: 5px 0 5px 0;
+}
+
+.custom-amount {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%);
+}
+.total {
+    background-color: hsl(183, 100%, 15%);
+    
+}
+.reset {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.val {
+    margin-left: 20vh;
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }

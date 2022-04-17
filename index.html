@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+
+<body>
+  <main>
+    <header><h1> spli <br/> tter </h1></header>
+    <section class="calculator-section">
+      <div class="calculator-wrapper">
+        <p> Bill</p>
+        <div class="bill-section">
+          <form action="">
+            <label for="billInput">
+              <img class="dollar-sign" src="images/icon-dollar.svg" alt="dollar sign"><input type="text"
+                name="billInput" class="num-of-bill" id="billInput">
+            </label>
+          </form>
+          <p> Select Tip %</p>
+          <div class="select-tip-section">
+            <button id="fivePercent">5%</button>
+            <button id="tenPercent">10%</button>
+            <button id="fifteenPercent">15%</button>
+            <button id="twentyFivePercent">25%</button>
+            <button id="fiftyPercent">50%</button>
+            <button class="custom-amount" id="customAmount">Custom</button>
+          </div>
+
+          <div class="num-people-section" id="people">
+            <p>Number of people</p>
+            <form action="">
+              <label for="numOfPeople">
+              <img class="peron-icon"src="images/icon-person.svg" alt="person"><input type="text" name="numOfPeople" class="num-of-people"
+                id="numOfPeople">
+              </label>
+            </form>
+          </div>
+        </div>
+          <div class="total">
+            <p class="font-in-white">Tip Amount<span class="val" id="val"> 20$</span></p>
+            <p>/person</p>
+            <p class="font-in-white"> Total </p>
+            <p>/person</p>
+            <button class="reset"> RESET </button>
+          </div>
+        </div>
+    </section>
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/rawisara-saman-566b3121b/">Rawisara Saman</a>.
+    </footer>
+
+  </main>
+</body>
+
+</html>
