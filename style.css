@@ -133,8 +133,12 @@ fieldset label:last-child {
     text-align: center;
 }
 
-input:hover {
+input:hover, button:hover {
     cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-light-cyan);
 }
 .dollar-sign, .person-icon {
     width: 10px;
