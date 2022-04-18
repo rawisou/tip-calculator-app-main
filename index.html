@@ -28,27 +28,22 @@
             <label for="billInput"> Bill </label>
             <img class="dollar-sign" src="images/icon-dollar.svg" alt="dollar sign">
             <div class="input-wrapper">
-              <input type="number" name="userInput" id="billInput">
+              <input type="text" name="userInput" id="billInput">
             </div>
           <fieldset class="select-tip-section">
             <legend> Select Tip %</legend>
-            <label for="tips-option"> 5%
               <input type="radio" value="5" name="tips-option" />
-            </label>
-            <label for="tips-option">10%
+              <label for="5"> 5%</label>
               <input type="radio" value="10" name="tips-option" />
-            </label>
-            <label for="tips-option">15%
+              <label for="10">10% </label>
               <input type="radio" value="15" name="tips-option" />
-            </label>
-            <label for="tips-option">25%
+              <label for="15">15% </label>
               <input type="radio" value="25" name="tips-option" />
-            </label>
-            <label for="tips-option">50%
+              <label for="25">25% </label>
               <input type="radio" value="50" name="tips-option" />
-            </label>
-            <label for="tips-option">
-              <input type="number" class="custom-amount" id="customAmount" name="custom-amount" placeholder="Custom"/>
+              <label for="50">50%</label>
+            <label for="customTip">
+              <input type="text" class="custom-amount" id="customAmount" name="customTip" placeholder="Custom"/>
             </label>
           </fieldset>
 
@@ -56,19 +51,19 @@
               <label for="numOfPeople"> Number of people </label>
               <img class="person-icon" src="images/icon-person.svg" alt="person">
               <div class="input-wrapper">
-                <input type="number" name="userInput" id="numOfPeople" class="num-ppl-input">
+                <input type="text" name="userInput" id="numOfPeople" class="num-ppl-input">
               </div>
           </div>
         </div>
       </form>
-        <div class="total">
-          <p class="font-in-white">Tip Amount<span id="tipAmount">$</span></p>
-          <p>/person</p>
-          <p class="font-in-white"> Total <span id="tipTotal">$</span></p>
-          <p>/person</p>
-          <button class="reset" id="resetBtn"> RESET </button>
-        </div>
+      <div class="total">
+        <p class="font-in-white">Tip Amount<span id="tipAmount">$</span></p>
+        <p>/person</p>
+        <p class="font-in-white"> Total <span id="tipTotal">$</span></p>
+        <p>/person</p>
+        <button class="reset" id="resetBtn"> RESET </button>
       </div>
+    </div>
     </section>
 
     <footer class="attribution">
